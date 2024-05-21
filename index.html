@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wealth Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="dashboard-title text-center mb-4">BILLIONAIRES WEALTH ANALYSIS</h1>
+        <!-- <button  class="button-82-pushable" role="button" style="position: absolute; top: 10%; left:87%">Reset All</button> -->
+        
+        <button id="map-button" class="button-82-pushable" role="button" style="position: absolute; top: 10%; left:87%">
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front text">
+            Reset All
+            </span>
+        </button>
+        <div class="row">
+            <div class="col-md-5 mb-4">
+                <div class="plot" id="map">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="plot" id="bar"></div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="plot" id="pie"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="plot" id="scatter"></div>
+            </div>
+            <div class="col-md-8 mb-4">
+                <div class="plot" id="pcp"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+    <script src="bar.js"></script>
+    <script src="pie.js"></script>
+    <script src="scatter.js"></script>
+    <script src="pca.js"></script>
+    <script src="pcp.js"></script>
+    <!-- <script src="treemap.js"></script> -->
+    <script src="map.js"></script>
+    <script src="app.js"></script>
+    <!-- type="module" -->
+</body>
+</html>
